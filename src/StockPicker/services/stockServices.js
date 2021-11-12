@@ -1,5 +1,6 @@
 const BASE_URL = 'https://www.alphavantage.co/query'
-const key = 'demo'
+const key = 'KJQF1E8V7O1YQCRP'
+// const key = 'demo'
 const fetchWrapper = (url)=>{
     return fetch(url)
     .then((resp)=>resp.json())

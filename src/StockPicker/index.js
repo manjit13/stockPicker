@@ -1,8 +1,11 @@
-import React, { useState, useEffect } from 'react'
-import './stockPicker.scss'
+import React, { useState } from 'react'
 import SearchStock from './components/searchBar'
 import StockInfoTable from './components/StockInfoTable'
 import {  fetchStockInfo } from './services/stockServices'
+import { createBrowserHistory } from 'history';
+
+import './stockPicker.scss'
+
 
 const NO_STOCK_INFO_MSG = 'You have entered incorrect value, Please try another symbol'
 
@@ -33,7 +36,6 @@ const StockPicker = ({refreshInterval}) => {
   }
 
   const onStockSelect = (val) => {
-    console.log(val, 'value')
     setIsLoading(true)
     updateStockData(val)
   }

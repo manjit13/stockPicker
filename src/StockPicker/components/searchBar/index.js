@@ -41,7 +41,7 @@ const onStockSelect = (val)=>{
 }
 
   return <div className='stock-search'>
-    <input className='srch-inp' onChange={handleSymbolChange} value={val} onFocus={handleShowSugg}  />
+    <input placeholder='Search Symbol' className='srch-inp' onChange={handleSymbolChange} value={val} onFocus={handleShowSugg}  />
     <button className='blu-btn' onClick={()=>onStockSelect(val)}>Search</button>
 
     {sugs.length > 0 && showSugg &&
