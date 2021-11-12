@@ -1,0 +1,29 @@
+.sug {
+  &-cont{
+    width: 30vw;
+    position: absolute;
+    left: 32vw;
+    border: 1px solid gray;
+    padding: 4px;
+    top: 46px;
+    background-color: #d8dee3;
+  }
+  &-tpl {
+    display: flex;
+    padding: 2px;
+    cursor: pointer;
+    pointer-events: none;
+    em{
+      pointer-events: auto;
+    }
+  }
+  &-name {
+    display: inline-block;
+    margin-left: auto;
+  }
+}
+.srch-inp{
+  margin: 3px;
+  width: 30vw;
+  padding: 9px;
+}
